@@ -1,0 +1,37 @@
+{
+  "name": "solana-rpc-fetcher",
+  "version": "1.0.0",
+  "description": "A tool for fetching Solana program historical transaction data using RPC",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "solana-rpc-fetcher": "./dist/index.js"
+  },
+  "keywords": [
+    "solana",
+    "rpc",
+    "blockchain",
+    "helius"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "axios": "^1.11.0",
+    "bs58": "^6.0.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/bs58": "^4.0.4",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  }
+}
