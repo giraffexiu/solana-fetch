@@ -119,7 +119,3 @@ npm run build
 # Clean build files
 npm run clean
 ```
-
-## License
-
-MIT
